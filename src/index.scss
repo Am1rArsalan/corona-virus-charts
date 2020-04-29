@@ -1,0 +1,31 @@
+@import './sass/mixin' ; 
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    font-size: 62.5%; // 1rem = 10px ;   10/16  * 100   =
+    box-sizing: inherit;
+  
+    @include respond(land-tab) {
+      font-size: 56.25%; // 1rem=9px 9/16 *100
+    }
+  
+    @include respond(port-tab) {
+      font-size: 50%; //   1rem=8px (8/16) *100
+    }
+  
+    @include respond(large-desktop) {
+      font-size: 75%; // 1rem = 12px
+    }
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color :#95afc0;
+  }
+  

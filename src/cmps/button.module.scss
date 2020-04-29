@@ -1,0 +1,25 @@
+.root { 
+    border: 2px solid transparent  ; 
+    outline: none ;
+    transition: all .2ms ease-in-out;
+    background-color: #AED581;
+    width: 100%;
+    padding: 1.9rem 1rem;
+    line-height: 2px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-top: 3rem;
+    color: #388E3C;
+    &:hover, 
+    &:active{ 
+        border: 2px solid #33691E;
+        outline: none;
+        cursor: pointer;
+        color: #1B5E20;
+    }
+
+    &:active{    
+        transform: translateY(2px);
+    }
+}

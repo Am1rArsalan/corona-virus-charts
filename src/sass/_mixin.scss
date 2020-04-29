@@ -1,0 +1,37 @@
+@mixin respond($break-point) {
+    // 0 -600 px
+    @if $break-point == phone {
+      @media (max-width: 37.5em) {
+        @content;
+      }
+    }
+    // 600px - 900px
+    @if $break-point == port-tab {
+      @media (max-width: 56.25em) {
+        @content;
+      }
+    }
+  
+    // 900px -  1200px
+    @if $break-point == land-tab {
+      @media (max-width: 75em) {
+        @content;
+      }
+    }
+  
+    // 1200px  - 1800px desktop and normal screen sizes ;
+  
+    // 1800px  - ... large
+    @if $break-point == large-desktop {
+      @media (min-width: 112.5em) {
+        @content;
+      }
+    }
+  
+    @if $break-point == from-port {
+      @media (min-width: 56.25em) {
+        @content;
+      }
+    }
+  }
+  
